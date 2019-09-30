@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* my Code starts here */
+/* Global variables, elements only */
+/* Global styles for elements */
+html {
+  background: floralwhite;
+}
+body {
+  width: 825px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+nav {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  padding-top: 15px;
+}
+nav .nav-elements {
+  margin-bottom: 10px;
+}
+nav .nav-elements a {
+  text-decoration: none;
+  color: dimgray;
+  background: floralwhite;
+  border: 2px solid black;
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+nav .nav-elements a:hover {
+  background-color: dimgray;
+  color: white;
+}
+main-container {
+  /* Mixins for the contact section*/
+  /* End of Mixins for contact section */
+}
+main-container header {
+  background: azure;
+  display: flex;
+  color: dimgray;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 50px;
+}
+main-container #profile-image {
+  background-image: url("../../images/Me.jpg");
+  width: 191px;
+  height: 208px;
+  background-repeat: no-repeat;
+  border: 4px solid dimgray;
+}
+main-container #contact-information {
+  margin-left: 50px;
+}
+main-container #contact-information h1 {
+  font-size: 2em;
+  color: dimgray;
+}
+main-container #contact-information h2 {
+  font-size: 1.5em;
+  color: dimgray;
+}
+main-container #contact-information #birthday-container,
+main-container #contact-information .email-container,
+main-container #contact-information .phone-container,
+main-container #contact-information .address-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+main-container #contact-information #birthday,
+main-container #contact-information #email,
+main-container #contact-information #phone,
+main-container #contact-information #address,
+main-container #contact-information #name,
+main-container #contact-information #title {
+  padding-top: 5px;
+  margin: 0px 0px 10px 10px;
+}
+main-container #contact-information #birthday-image {
+  background-image: url("../../images/bday.png");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+main-container #contact-information .email-image {
+  background-image: url("../../images/email.png");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+main-container #contact-information .phone-image {
+  background-image: url("../../images/phone.png");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+main-container #contact-information .address-image {
+  background-image: url("../../images/address.png");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+main-container #header-line {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin: 5px 0px 5px 0px;
+}
+main-container .main-content {
+  display: flex;
+  flex-direction: row;
+}
+main-container .main-content h3 {
+  font-size: 1.2;
+  color: blue;
+}
+main-container .main-content #left-column,
+main-container .main-content #right-column {
+  flex-direction: column;
+  background: azure;
+  display: flex;
+  color: dimgray;
+  border: 1px solid black;
+  padding: 20px;
+  width: 50%;
+}
+main-container .main-content #left-column .content-line,
+main-container .main-content #right-column .content-line {
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+  margin: 5px 0px 10px 0px;
+}
+main-container .main-content #work-experience p:first-child {
+  font-weight: bold;
+}
+main-container .main-content #right-column {
+  margin-left: 10px;
+}
+main-container .main-content #right-column #education,
+main-container .main-content #right-column #other-information {
+  margin-top: 10px;
+}
+main-container .main-content #right-column #education p:first-child {
+  font-weight: bold;
+}
+main-container .main-content #right-column #other-information ul li {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-left: 2em;
+  text-indent: -1.1em;
+}
+main-container #skills {
+  background: azure;
+  display: flex;
+  color: dimgray;
+  border: 1px solid black;
+  padding: 20px;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-content: center;
+  margin-top: 10px;
+}
+a:target {
+  background-color: dimgray;
+  color: white;
+}
+a:target #about-me {
+  opacity: 0.1;
+}
+a:target #work-experience {
+  opacity: 0.1;
+}
+@media (max-width: 500px) {
+  body {
+    width: 96vw;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  body nav {
+    position: relative;
+    width: 98%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  body .nav-elements {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  body .header-line {
+    width: 98%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  body #main-container {
+    width: 98%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  body header {
+    width: 98%;
+    flex-direction: column;
+  }
+}
